@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+:root{
+    --hover: #fe5e35;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+body{
+    font-family: 'Poppins', 'Fredoka One';
+}
+
+
+/* ----------------NAV------------- */
+
+nav{
+    height: 15vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+[alt="logo"]{
+    cursor: pointer;
+    margin: 5% 10%;
+}
+
+.nav-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    font-size: 22px;
+}
+
+.active-item{
+    color: var(--hover);
+}
+
+[alt="actions"]{
+    cursor: pointer;
+    margin: auto 40%;    
+}
+
+button{
+    cursor: pointer;
+}
+
+/* --------------Main------------ */
+
+/*--------------left------------------*/
+
+.intro-section{
+    margin-left: 3%;
+    margin-top: 3%;
+    display: flex;
+    height: 85vh;
+}
+
+.left-section{
+    float: left;
+    width: 50%;
+}
+
+h3{
+    font-size: 45px;
+}
+
+[alt="circles"]{
+    height: 40px;
+}
+
+h1{
+    margin-top: 1%;
+    font-family: 'Fredoka One';
+    font-size: 60px;
+}
+
+.sub-headlines{
+    width: 100%;
+    margin: 3% 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+h5{
+    display: flex;
+    padding: 10px;
+    position: relative;
+    margin-top: 1%;
+    font-size: 22px;
+}
+
+.left-section .sub-headlines h5 img{
+    position: relative;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: var(--hover);
+    margin-right: 20px;
+}
+
+.text{
+    font-size: 14px;
+}
+
+
+.action-btn{
+    font-size: 16px;
+    color: var(--white);
+    margin: 7% 3%;
+    background-color: var(--hover);
+    padding: 20px 40px;
+    border-radius: 25px;
+}
+
+.right-section{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+[alt="headphone"]{
+    width: 450px;
+    margin-top: -20%;
+    position: relative;
+    z-index: -1;
+}
+
+.discount{
+    filter: drop-shadow(5px 5px  rgba(0,0,0,0.3));
+    margin-left: -08%;
+    height: 120px;
+    margin-top: 28%;
+    position: absolute;
+}
+
+.discount-content{
+    left: 13%;
+    color: var(--white);
+    margin-top: 33%;
+    display: block;
+    position: absolute;
+
+}
+
+.discount-content h4{
+    font-size: 12px;
+}
+
+.discount-content h1{
+    font-size: 34px;
+}
+
+.dots{
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    position: relative;
+    display: flex;
+
+}
+
+.dot{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    border-radius: 50%;
+}
+.yellow-dot{
+    background-color: #fbd104;
+}
+
+.tomato-dot{
+    background-color:  #fe5e35;
+}
+
+.black-dot{
+    background-color: #000000;
+}
+
+@media only screen and (max-width: 1080px){
+    [alt="actions"]{
+       display: none;
+    }
+
+    [alt="logo"]{
+        width: 100px;
+        height: 100px;
+    }
+    
+    nav{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .nav-items{
+        justify-content: center;
+        width: 50%;
+    }
+    
+    .left-section h3{
+        font-size: 26px;
+    }
+
+    
+    .left-section h1{
+        font-size: 34px;
+    }
+
+    [alt="headphone"]{
+        width: 350px;
+    }
+
+    .sub-headlines{
+        margin-left: 0.7em;
+    }
+    
+    .discount-content{
+        left: 8%;
+    }
+
+    .dots{
+        gap: 3px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    [alt="actions"]{
+        margin: auto;
+        display: block;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .intro-section{
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .right-section{
+        width: 100%;
+        /* display: none; */
+    }
+
+    .left-section{
+        width: 100%;
+    }
+
+    [alt="headphone"]{
+        margin: 0;
+        z-index: 1;
+    }
+
+    .discount, .discount-content{
+        z-index: 2;
+    }
+}
