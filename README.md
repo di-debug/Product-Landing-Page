@@ -13,7 +13,7 @@
 
 ---
 
-### Checkout the live website [here](https://project07-Product.netlify.app/).
+### Checkout the live website [here](https://project07-product.netlify.app/).
 
 ---
 
